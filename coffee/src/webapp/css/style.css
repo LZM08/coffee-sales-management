@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hi+Melody&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+html, body {					/* <html>, <body> 태그에 적용될 스타일 	*/
+    width: 100%;				/* 브라우저에 상관 없이 넓이 : 100% 		*/
+    height: 100%;				/* 브라우저에 상관 없이 높이 : 100% 		*/
+    margin : 0;					/* 여백 : 0							*/
+    padding :0;					/* text 상 우 하 좌 여백 : 0			*/
+    background: #dfdfdf;			/* 배경색    : 회색					*/
+
+}
+
+h1{
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav {							/* <nav> 태그에 적용될 스타일 			*/
+    width: 100%;
+
+}
+pre {
+    background-color: #fff8dc;  /* 밝은 노랑색 배경색 */
+    border: 2px solid #f0e68c;  /* 노랑색 테두리 */
+    border-radius: 5px;          /* 테두리 둥글게 */
+    padding: 15px;               /* 내부 여백 증가 */
+    overflow-x: auto;            /* 가로 스크롤바 자동 표시 */
+    font-family: Arial, sans-serif; /* Arial 또는 sans-serif 폰트 사용 */
+    font-size: 16px;             /* 글꼴 크기 증가 */
+    line-height: 1.6;            /* 줄간격 증가 */
+    color: #333;                 /* 어두운 회색 텍스트 색상 */
+}
+h3 {
+    font-size: 24px;           /* 글꼴 크기 증가 */
+    color: #333;               /* 어두운 회색 텍스트 색상 */
+    background-color: #f0e68c; /* 노랑색 배경색 */
+    padding: 10px 15px;        /* 내부 여백 */
+    border-radius: 5px;        /* 테두리 둥글게 */
+    text-align: center;        /* 가운데 정렬 */
+    text-transform: uppercase; /* 대문자로 변환 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+
+
+nav > a {						/* <nav> 의 <a> 태그에 적용될 스타일 		*/
+    color: #000;				/* 글꼴 색상 : 검정						*/
+    text-decoration: none;		/* 글꼴 밑줄 : 없음						*/
+}
+
+
+
+section {						/* <section> 태그에 적용될 스타일 		*/
+    width: 100%;				/* 브라우저에 상관 없이 넓이 : 100% 		*/
+    height: auto;				/* 브라우저에 상관 없이 높이 : 100% 		*/
+    text-align: center;			/* 글꼴 정렬 : 가운데 					*/
+    padding: 15px;				/* text 상 우 하 좌 여백 : 15			*/
+}
+
+table {
+    margin: 0 auto;
+}
+/* 큰 화면에서 메뉴 아이템 퍼짐 효과 */
+.navbar-nav {
+    width: 100%;
+    justify-content: space-around; /* 메뉴 아이템을 너비에 걸쳐 고르게 분포 */
+}
+
+/* 작은 화면에서 세로 드롭다운 */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* 세로 배열 */
+    }
+
+    .nav-link {
+        width: 100%; /* 전체 너비 사용 */
+        text-align: center; /* 텍스트 중앙 정렬 */
+    }
+}
+
+.hi-melody-regular {
+    font-family: "Hi Melody", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.black-han-sans-regular {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card>img{
+    width: 100px;
+    height: 100px;
+}
